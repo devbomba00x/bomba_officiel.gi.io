@@ -1,37 +1,91 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl"> <!-- لجعل الموقع باللغة العربية -->
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>موقعي الشخصي</title>
-    <link rel="stylesheet" href="style.css"> <!-- رابط ملف التصميم -->
+    <title>☠️DEV BY BOMBA☠️</title>
+    <style>
+        /* التصميم الخيالي */
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        .fire-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.gifer.com/7XlA.gif'); /* خلفية نار متحركة */
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            text-align: center;
+            padding: 50px;
+            color: #fff;
+            text-shadow: 0 0 10px #ff3300;
+        }
+
+        .name {
+            font-size: 4em;
+            margin: 20px;
+            animation: glow 2s infinite;
+        }
+
+        .photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #ff6600;
+            box-shadow: 0 0 30px #ff3300;
+            margin: 20px auto;
+        }
+
+        .contacts {
+            margin-top: 50px;
+        }
+
+        .contacts a {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 30px;
+            background: rgba(255, 102, 0, 0.7);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+
+        .contacts a:hover {
+            background: #ff3300;
+            transform: scale(1.1);
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 10px #ff3300; }
+            50% { text-shadow: 0 0 30px #ff9900; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>HELLO I'M BOMBA DEV HACK</h1>
-        <nav>
-            <a href="#about">MY INFORMATIONS</a>
-            <a href="#projects">PYTHON...</a>
-            <a href="#contact">https://www.instagram.com/le5lil_ayadi?igsh=MWdobWFid3dwbW9vNQ==</a>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>معلومات عني 🧑💻</h2>
-        <p>أنا مبتدئ في البرمجة وأحب التعلم!</p>
-        <img src="bomba.jpg" alt="صورتي" width="200">
-    </section>
-
-    <section id="projects">
-        <h2>PROJETS</h2>
-        <div class="project">
-            <h3>SERVEUR PROXY</h3>
-            <p>TOUT SKINS FREE FIRE</p>
+    <div class="fire-container"></div>
+    
+    <div class="content">
+        <h1 class="name">BOMBA OFFICIEL</h1>
+        <img src="[https://www.instagram.com/p/DKLj2L-I9h1/?igsh=MWZ4c2FxcjVqa2FkZQ==]" class="photo" alt="صورتي">
+        
+        <div class="contacts">
+            <a href="https://www.tiktok.com/bombaofficiel1"> </a>
+            <a href="https://t.me/BOMBA_OFFICIEL" > </a>
+            <a href="https://www.instagram.com/le5lil_ayadi"> </a>
         </div>
-    </section>
-
-    <footer id="contact">
-        <h2>تواصل معي 📧</h2>
-        <p>TELEGRAM : BOMBA_OFFICIEL</p>
-    </footer>
+    </div>
 </body>
 </html>
