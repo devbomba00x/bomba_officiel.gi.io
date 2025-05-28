@@ -2,89 +2,83 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>☠️DEV BY BOMBA☠️</title>
+    <title>🔥 [BOMBA OFFICIEL] الناري</title>
     <style>
-        /* التصميم الخيالي */
+        /* تصميم الخيال الناري */
         body {
             margin: 0;
             height: 100vh;
             background: #000;
             overflow: hidden;
-            font-family: 'Arial Black', sans-serif;
+            font-family: 'Impact', sans-serif;
         }
 
-        .fire-container {
+        .fire {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://i.gifer.com/7XlA.gif'); /* خلفية نار متحركة */
+            top: -20%;
+            left: -20%;
+            width: 140%;
+            height: 140%;
+            background: url('https://i.gifer.com/7XlA.gif'); /* خلفية نار متحركة 360 درجة */
             background-size: cover;
-            z-index: -1;
+            filter: brightness(1.5);
+            z-index: 0;
         }
 
         .content {
             position: relative;
             text-align: center;
-            padding: 50px;
-            color: #fff;
-            text-shadow: 0 0 10px #ff3300;
+            padding-top: 20vh;
+            color: #ffd700; /* لون ذهبي مشع */
+            z-index: 1;
         }
 
         .name {
-            font-size: 4em;
-            margin: 20px;
-            animation: glow 2s infinite;
+            font-size: 5em;
+            text-shadow: 0 0 30px #ffd700, 0 0 60px #ff4500;
+            animation: glow 1.5s infinite alternate;
+            margin: 30px 0;
         }
 
-        .photo {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            border: 5px solid #ff6600;
-            box-shadow: 0 0 30px #ff3300;
-            margin: 20px auto;
-        }
-
-        .contacts {
+        .social-links {
             margin-top: 50px;
         }
 
-        .contacts a {
+        .social-links a {
             display: inline-block;
             margin: 15px;
-            padding: 15px 30px;
-            background: rgba(255, 102, 0, 0.7);
+            padding: 15px 35px;
+            background: rgba(255, 69, 0, 0.7); /* لون ناري */
             color: white;
             text-decoration: none;
-            border-radius: 25px;
-            font-size: 1.2em;
+            border-radius: 30px;
+            font-size: 1.3em;
             transition: 0.3s;
+            border: 2px solid #ffd700;
         }
 
-        .contacts a:hover {
-            background: #ff3300;
-            transform: scale(1.1);
+        .social-links a:hover {
+            background: #ff0000;
+            transform: scale(1.2);
+            box-shadow: 0 0 30px #ffd700;
         }
 
         @keyframes glow {
-            0%, 100% { text-shadow: 0 0 10px #ff3300; }
-            50% { text-shadow: 0 0 30px #ff9900; }
+            from { text-shadow: 0 0 10px #ffd700; }
+            to { text-shadow: 0 0 50px #ffd700, 0 0 30px #ff4500; }
         }
     </style>
 </head>
 <body>
-    <div class="fire-container"></div>
+    <div class="fire"></div>
     
     <div class="content">
-        <h1 class="name">BOMBA OFFICIEL</h1>
-        <img src="[https://www.instagram.com/p/DKLj2L-I9h1/?igsh=MWZ4c2FxcjVqa2FkZQ==]" class="photo" alt="صورتي">
+        <h1 class="name">[B O M B A DEV HACK☠️]</h1>
         
-        <div class="contacts">
-            <a href="https://www.tiktok.com/bombaofficiel1"> </a>
-            <a href="https://t.me/BOMBA_OFFICIEL" > </a>
-            <a href="https://www.instagram.com/le5lil_ayadi"> </a>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@bombaofficiel1" target="_blank">🎵 تيك توك</a>
+            <a href="https://t.me/BOMBA_OFFICIEL" target="_blank">✈️ تليجرام</a>
+            <a href="https://instagram.com/le5lil_ayadi" target="_blank">📸 انستجرام</a>
         </div>
     </div>
 </body>
